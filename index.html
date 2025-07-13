@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title> 
+    <style>
+       * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #432818;
+    color: #FFE6A7;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+.navbar {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.nav-names ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 90px;
+    flex-wrap: wrap;
+    font-weight: bold;
+}
+
+.nav-names ul li a {
+    color: #FFE6A7;
+    transition: color 0.3s;
+}
+
+.nav-names ul li a:hover {
+    color: white;
+}
+
+/* HERO SECTION */
+.nav-pic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.nav-pic h1 {
+    font-size: 55px;
+    color: #BB9457;
+}
+
+.nav-pic h1 pre {
+    font-size: 20px;
+    color: #FFE6A7;
+}
+
+.nav-pic img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 10px solid #FFE6A7;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* EDUCATION SECTION */
+.education {
+    background-color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.education h1 {
+    color: #BB9457;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.graduation {
+    background-color: #FFE6A7;
+    color: #432818;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.headin {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #BB9457;
+}
+
+.graduation ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* HOBBY SECTION */
+.hobby {
+    margin: 60px 20px;
+    border: 4px solid wheat;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.hobby h3 {
+    font-size: 40px;
+    color: #BB9457;
+    margin-bottom: 20px;
+}
+
+.hobby ul li {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* CONTACT SECTION */
+.social-media {
+    margin: 60px 20px;
+    padding: 20px;
+    border: 2px solid wheat;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.social-media h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.social-media ul li {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.social-media ul li a {
+    color: #FFE6A7;
+    transition: color 0.3s;
+}
+
+.change :hover {
+    color: blue;
+}
+
+.changee :hover {
+    color: black;
+}
+
+.changeee :hover {
+    color: burlywood;
+}
+
+/* FOOTER */
+footer {
+    background-color: #452111;
+    color: #FFE6A7;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .nav-pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-pic h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-names ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-pic img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nav-pic h1 {
+        font-size: 32px;
+    }
+
+    .nav-pic h1 pre {
+        font-size: 16px;
+    }
+
+    .education h1,
+    .hobby h3,
+    .social-media h1 {
+        font-size: 28px;
+    }
+
+    .headin {
+        font-size: 22px;
+    }
+
+    .graduation ul li {
+        font-size: 16px;
+    }
+
+    .hobby ul li,
+    .social-media ul li {
+        font-size: 16px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+         <div class="nav-names">
+            <ul>
+                <li class="new"><a href="#">HOME</a></li>
+                <li class="new"><a href="#education">EDUCATION</a></li>
+                <li class="new"><a href="#hobby">HOBBY</a></li>
+                <li class="new"><a href="#contact-me">CONTACT ME</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="nav-pic">
+      <h1>KHUSHI GUPTA<pre>ASPIRING WEB DEVELOPER
+             </pre></h1>
+             
+          <img src="/portpic.jpeg" alt="photo">
+           
+        </div>
+        <hr>
+      
+       
+    </div>
+    <hr>
+
+    <div class="education" id="education">
+        <h1 >MY QUALIFICATIONS🏅</h1>
+        <div class="graduation"  style="background-color: #FFE6A7;">
+            <h3 class="headin">ENGINEERING  &#x1F469;&#x200D;&#x1F393;</h3>
+            <ul>
+                <li>🤍2025-2029</li>
+                <li>🤍FROM DELHI TECHNOLOGICAL UNIVERSITY</li>
+                <li>🤍FIRST YEAR</li>
+            </ul>
+        </div>
+        <div class="graduation">
+        <h3 class="headin">10+2 MATRICULATION</h3>
+        <ul>
+            <li>🤍2023-2024</li>
+            <li>🤍 PASSED FROM GOVERNMENT GIRLS SENIOR SECONDARY SCHOOL</li> 
+             <li>🤍Stream-Physics Chemistry Maths Biology along with Computer Science</li>
+            </ul>
+            </div>
+
+            <div class="graduation">
+              <h3 class="headin">MATRICULATION</h3>
+              <ul>
+                <li>🤍2021-2022</li>
+                <li>🤍PASSED FROM AMRITA PUBLIC SCHOOL</li>
+
+              </ul>
+            </div>
+        </div>
+     <hr>
+        <div class="hobby" id="hobby">
+            <h3>MY HOBBIES</h3>
+            <ul>
+                <li>🌼MAKING PEOPLE LAUGH</li>
+                <li>🌼KILLING BUGS</li>
+                <li>🌼FOODIE</li>
+            </ul>
+        </div>
+    <hr>
+        <div class="social-media" id="contact-me">
+            <h1>Contact Me</h1>
+           <ul>
+            <li class="change"><a href="https://www.linkedin.com/in/khushi-gupta-ba3817302/">Linkedin </a> </li>
+            <li class="changee"><a href="https://github.com/khushi19-code">Github</a></li>
+            <li class="changeee"><a href="https://drive.google.com/file/d/1pSD4aC2p4rsA0WCFND9-DiGv5OQlQ2UX/view?usp=drivesdk">My Resume</a></li>
+            
+           </ul>
+
+        </div>
+    
+<footer>
+     Made with 💕
+     <br>
+     © 2025 Khushi Gupta. All rights reserved.
+</footer>
+
+
+   
+
+
+        
+</body>
+</html>
